@@ -3,8 +3,7 @@
 [$filename, $newVersion] = $argv;
 
 if (preg_match('/^\d+\.\d+\.\d+-(beta\.\d+|hotfix\.\d+|stable)$/', $newVersion) !== 1) {
-    echo "Given version $newVersion does not match expected pattern." . PHP_EOL;
-    exit(-1);
+    die("Given version $newVersion does not match expected pattern.");
 }
 
 $file = file_get_contents(__DIR__ . '/composer.json');
