@@ -1,6 +1,6 @@
 {
     "name": "justusbunsi/github-action-experiments",
-    "version": "1.0.1-beta.2",
+    "version": "1.0.1-beta.3",
     "description": "Experimenting with github actions",
     "type": "library",
     "license": "MIT",
