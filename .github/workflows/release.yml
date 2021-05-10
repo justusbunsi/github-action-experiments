@@ -21,7 +21,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        token: '{{ secrets.REPO_TOKEN }}'
+        token: ${{ secrets.REPO_TOKEN }}
     - name: Install dependencies
       uses: php-actions/composer@v5
     - name: Bump version
