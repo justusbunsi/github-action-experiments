@@ -11,5 +11,5 @@ jobs:
         run: echo Hello, world!
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build for ref ${{ GITHUB_REF }},
+          echo Add other actions to build for ref ${{ env.GITHUB_REF }},
           echo test, and deploy your project.
